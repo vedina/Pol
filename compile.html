@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>OpenTox Policy service - OpenTox Policy service</title>
+    <style type="text/css" media="all">
+      @import url("./css/maven-base.css");
+      @import url("./css/maven-theme.css");
+      @import url("./css/site.css");
+    </style>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+          <meta name="author" content="Background" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                  <a href="http://opentox.org" id="bannerLeft">
+    
+                                    <img src="http://opentox.org/logo.png" alt="" />
+    
+            </a>
+                          <span id="bannerRight">
+    
+                                            <img src="" alt="" />
+    
+            </span>
+            <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+              <div class="xright">            <a href="http://toxtree.sourceforge.net" class="externalLink">Toxtree</a>
+            |
+                <a href="http://ecb.jrc.ec.europa.eu/qsar/qsar-tools/index.php?c=TOXMATCH" class="externalLink">Toxmatch</a>
+            |
+                <a href="http://ambit.sourceforge.net" class="externalLink">AMBIT 2.0</a>
+            |
+                <a href="http://apps.ideaconsult.net:8080/ambit2" class="externalLink">AMBIT REST services</a>
+            |
+                <a href="http://vedina.github.com/opentox-aa-cli" class="externalLink">OpenTox AA</a>
+            |
+                <a href="http://vedina.github.com/Pol" class="externalLink">OpenTox Policy service</a>
+            |
+                <a href="http://toxpredict.org" class="externalLink">ToxPredict</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                   <h5>OpenTox Policy service</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="index.html">Home</a>
+          </li>
+              
+    <li class="none">
+              <strong>Compile</strong>
+        </li>
+              
+    <li class="none">
+                    <a href="db.html">Configure</a>
+          </li>
+              
+    <li class="none">
+                    <a href="install.html">Install</a>
+          </li>
+          </ul>
+              <h5>Project Documentation</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-info.html">Project Information</a>
+                </li>
+              
+                
+              
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-reports.html">Project Reports</a>
+                </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="./images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+            <div id="lastPublished">
+        Last Published: 07-09-11
+              </div>
+            </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2>OpenTox Policy service</h2>
+<ul><li>Install <a class="externalLink" href="http://maven.apache.org"> Apache Maven</a> build tool</li>
+</ul>
+<ul><li>Configure your maven profile<div class="source"><pre>
+  &lt;profile&gt;
+      &lt;id&gt;policy&lt;/id&gt;
+      &lt;activation&gt;
+        &lt;activeByDefault&gt;true&lt;/activeByDefault&gt;
+      &lt;/activation&gt;
+      &lt;properties&gt;
+        &lt;openssouser&gt;OpenAM admin user name&lt;/openssouser&gt;
+        &lt;openssopassword&gt;OpenAM admin password&lt;/openssopassword&gt;
+        &lt;openssoservice&gt;URI of the The OpenSSO/OpenAM service&lt;/openssoservice&gt;
+      &lt;/properties&gt;
+    &lt;/profile&gt;
+</pre>
+</div>
+</li>
+</ul>
+<ul><li>Retrieve the source from <a class="externalLink" href="https://github.com/vedina/Pol">GitHub</a>. </li>
+<li>Run with<div class="source"><pre>
+mvn clean package -P policy
+</pre>
+</div>
+</li>
+</ul>
+<ul><li>The Pol-<a name="version">version</a>.war file is in the target directory</li>
+<li>Test with <div class="source"><pre>
+mvn tomcat:run
+</pre>
+</div>
+</li>
+</ul>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2010-2011
+    
+          OpenTox project
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>OpenTox Policy service - OpenTox Policy service</title>
+    <style type="text/css" media="all">
+      @import url("./css/maven-base.css");
+      @import url("./css/maven-theme.css");
+      @import url("./css/site.css");
+    </style>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+          <meta name="author" content="Background" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                  <a href="http://opentox.org" id="bannerLeft">
+    
+                                    <img src="http://opentox.org/logo.png" alt="" />
+    
+            </a>
+                          <span id="bannerRight">
+    
+                                            <img src="" alt="" />
+    
+            </span>
+            <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+              <div class="xright">            <a href="http://toxtree.sourceforge.net" class="externalLink">Toxtree</a>
+            |
+                <a href="http://ecb.jrc.ec.europa.eu/qsar/qsar-tools/index.php?c=TOXMATCH" class="externalLink">Toxmatch</a>
+            |
+                <a href="http://ambit.sourceforge.net" class="externalLink">AMBIT 2.0</a>
+            |
+                <a href="http://apps.ideaconsult.net:8080/ambit2" class="externalLink">AMBIT REST services</a>
+            |
+                <a href="http://vedina.github.com/opentox-aa-cli" class="externalLink">OpenTox AA</a>
+            |
+                <a href="http://vedina.github.com/Pol" class="externalLink">OpenTox Policy service</a>
+            |
+                <a href="http://toxpredict.org" class="externalLink">ToxPredict</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                   <h5>OpenTox Policy service</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="index.html">Home</a>
+          </li>
+              
+    <li class="none">
+                    <a href="compile.html">Compile</a>
+          </li>
+              
+    <li class="none">
+              <strong>Configure</strong>
+        </li>
+              
+    <li class="none">
+                    <a href="install.html">Install</a>
+          </li>
+          </ul>
+              <h5>Project Documentation</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-info.html">Project Information</a>
+                </li>
+              
+                
+              
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-reports.html">Project Reports</a>
+                </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="./images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+            <div id="lastPublished">
+        Last Published: 07-09-11
+              </div>
+            </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2>OpenTox Policy service </h2>
+<div class="section"><h3>MySQL Database</h3>
+<ul><li>Make sure <a class="externalLink" href="http://mysql.com">MySQL</a> server is installed and running.</li>
+<li>Create the 'pol' database and the policy table.<div class="source"><pre>CREATE DATABASE pol;
+
+CREATE TABLE  `pol` (
+  `pol` varchar(4096) DEFAULT NULL,
+  `user` varchar(255) DEFAULT NULL,
+  `res` varchar(4096) DEFAULT NULL,
+  `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`),
+  KEY `index_pol` (`pol`(767)) USING BTREE,
+  KEY `index_user` (`user`) USING BTREE,
+  KEY `index_res` (`res`(767)) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=ascii;
+</pre>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2010-2011
+    
+          OpenTox project
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>
