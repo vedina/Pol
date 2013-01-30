@@ -121,7 +121,7 @@ public class PolicyHelper {
 		boolean found=false;
 		while ((str2 = reader.readLine()) != null) {
 			if (found) return str2 + "\n\n";
-			if (str2.contains("OpenSSOBack to main page")) {
+			if (str2.contains("OpenAMBack to main page")) {
 				found = true;
 			}
 		}
