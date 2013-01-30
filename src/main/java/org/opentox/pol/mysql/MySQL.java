@@ -29,13 +29,15 @@ public class MySQL {
 		try {
 			InputStream fis = null;
 			String pw = "";
+			String user = "";
 			String propfile = "org/opentox/pol/admin.properties";
 			fis = OpenssoHelper.class.getClassLoader().getResourceAsStream(propfile);
 			if (fis==null) throw new RestException(500,"Cant't load "+propfile);
 			Properties config = new Properties();
 			try {
 				config.load(fis);
-				pw = config.getProperty("pw");
+				pw = config.getProperty("pol.mysql.pw");
+				user = config.getProperty("pol.mysql.user");
 			} catch (IOException e) {
 				throw new RestException(500,e);
 			}
@@ -46,7 +48,7 @@ public class MySQL {
 					// ignore
 				}
 			}
-			conn = getConnection("root", pw);		   
+			conn = getConnection(user, pw);		   
 			
 		} catch (SQLException e) {
 			throw new DbException(String.format("SQLException: %s\nSQLState: %s\nVendorError: %d", e.getMessage(),e.getSQLState(),e.getErrorCode()));
