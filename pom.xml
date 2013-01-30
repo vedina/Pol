@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.opentox</groupId>
   <artifactId>Pol</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>0.0.3</version>
   <packaging>war</packaging>
   <name>Policy service</name>
   <description>OpenTox policy service.  Forked from  https://github.com/amaunz/Pol</description>
@@ -119,7 +119,7 @@ probably because of transitive dependencies -->
 <dependency>
 	<groupId>net.idea</groupId>
 	<artifactId>modbcum-c</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<type>jar</type>
 	<scope>compile</scope>
 </dependency>
