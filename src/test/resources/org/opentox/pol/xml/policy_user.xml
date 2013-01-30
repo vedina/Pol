@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Policies>
+    <Policy name="useruser001httplocalhost8080ambit2datasetGETPOSTPUTDELETE" createdby="id=amadmin,ou=user,dc=opentox,dc=org" lastmodifiedby="id=amadmin,ou=user,dc=opentox,dc=org" creationdate="1358340428581" lastmodifieddate="1358340428581" referralPolicy="false" active="true">
+        <Rule name="tr1">
+            <ServiceName name="iPlanetAMWebAgentService"/>
+            <ResourceName name="http://localhost:8080/ambit2/dataset"/>
+            <AttributeValuePair>
+                <Attribute name="POST"/>
+                <Value>allow</Value>
+            </AttributeValuePair>
+            <AttributeValuePair>
+                <Attribute name="GET"/>
+                <Value>allow</Value>
+            </AttributeValuePair>
+<!--            <AttributeValuePair>
+                <Attribute name="DELETE"/>
+                <Value>allow</Value>
+            </AttributeValuePair>
+            <AttributeValuePair>
+                <Attribute name="PUT"/>
+                <Value>allow</Value>
+            </AttributeValuePair> -->
+        </Rule>
+        <Subjects name="s1" description="">
+            <Subject name="user001" type="LDAPUsers" includeType="inclusive">
+                <AttributeValuePair>
+                    <Attribute name="Values"/>
+                    <Value>uid=user001,ou=people,dc=opentox,dc=org</Value>
+                </AttributeValuePair>
+            </Subject>
+        </Subjects>
+    </Policy>
+</Policies>
