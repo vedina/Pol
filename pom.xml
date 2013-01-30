@@ -141,11 +141,11 @@ probably because of transitive dependencies -->
  		<timezone>CEST</timezone>
  	</developer>
  </developers>
- <scm>
- 	<connection>scm:git:https://vedina@github.com/vedina/Pol.git</connection>
- 	<developerConnection>scm:git:git@github.com:vedina/Pol.git</developerConnection>
- 	<url>https://github.com/vedina/Pol</url>
- </scm>
+  <scm>
+    <connection>scm:git:git://github.com/vedina/Pol.git</connection>
+    <developerConnection>scm:git:git@github.com:vedina/Pol.git</developerConnection>
+    <url>https://vedina.@github.com/vedina/Pol</url>
+  </scm>
  <organization>
  	<name>OpenTox project</name>
  	<url>http://www.opentox.org</url>
