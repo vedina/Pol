@@ -41,6 +41,6 @@ public class RestException extends Exception {
     }
     @Override
     public String toString() {
-    	return String.format("[%d] %s",super.toString());
+    	return String.format("[%d] %s",httpcode,super.toString());
     }
 }
