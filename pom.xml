@@ -99,7 +99,7 @@ probably because of transitive dependencies -->
 <dependency>
     <groupId>mysql</groupId>
     <artifactId>mysql-connector-java</artifactId>
-    <version>5.1.16</version>
+    <version>5.1.22</version>
    
 </dependency>	
 
@@ -116,6 +116,7 @@ probably because of transitive dependencies -->
 	<type>jar</type>
 	<scope>test</scope>
 </dependency>
+
 <dependency>
 	<groupId>net.idea</groupId>
 	<artifactId>modbcum-c</artifactId>
@@ -123,6 +124,7 @@ probably because of transitive dependencies -->
 	<type>jar</type>
 	<scope>compile</scope>
 </dependency>
+
  </dependencies>
  <url>https://github.com/vedina/Pol</url>
  <inceptionYear>2010</inceptionYear>
